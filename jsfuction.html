@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <title>JavaScript Object Data Type</title>
+</head>
+<body>
+	<script>
+	var isSquare = function (n) {
+    return n > 0 && Math.sqrt(n) % 1 == 0;
+		};
+	function displayCount(a) {
+    var count =0;
+
+	for (var i=0; i<a.length;i++)
+    {
+
+    if(isSquare(parseInt(a[i])))
+        {
+        count+=1;
+        }
+
+		}
+return count ;
+}
+// Calling function
+var array=['72','81','35','16', '4'];
+var result=displayCount(array);
+alert("Count of perfect square="+ result );
+</script>
+</body>
+</html>
+
